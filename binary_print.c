@@ -24,7 +24,7 @@ void print_bytes_between(void *from, void *to) {
 	if(from>to) {
 		printf("%p is higher than %p\n", from,to);
 	}
-	while(byte<=to) {
+	while(byte<=(char *)to) {
 		if(i%4==0) {
 			printf("\n%p ", byte);
 		}
